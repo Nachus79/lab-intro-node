@@ -62,7 +62,23 @@ class SortedList {
 
   }
 
-  sum() {}
+  sum() {
+    if (this.length === 0) {
+
+      return 0; 
+
+    }
+
+    let sum = 0; 
+
+    for (let i = 0; i < this.items.length; i++){
+      sum += this.items[i];
+
+    }
+    return sum; 
+
+
+  }
 
   avg() {}
 }
@@ -72,8 +88,6 @@ module.exports = SortedList;
 
 
 /*
-Iteration 5: min()
-The min() method should return the lowest value of the array.
-
-In case you have an empty SortedList, you must throw an error with the message "Empty SortedList".
+Bonus | Iteration 6: sum()cd node
+The sum() method should return the sum value of the array. At this point, we will not tell you anything else. Just go ahead and check the corresponding test and see if anything else needs to be added. You can do this! ❤️
 */
