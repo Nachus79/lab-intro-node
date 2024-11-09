@@ -80,7 +80,23 @@ class SortedList {
 
   }
 
-  avg() {}
+  avg() {
+    if (this.length === 0) {
+
+      throw new Error("EmptySortedList"); 
+
+    }
+
+    let sum = 0; 
+
+    for (let i = 0; i < this.items.length; i++){
+      sum += this.items[i];
+
+    }
+
+      return sum/this.items.length; 
+
+  }
 }
 
 module.exports = SortedList;
@@ -88,6 +104,13 @@ module.exports = SortedList;
 
 
 /*
-Bonus | Iteration 6: sum()cd node
-The sum() method should return the sum value of the array. At this point, we will not tell you anything else. Just go ahead and check the corresponding test and see if anything else needs to be added. You can do this! ❤️
+
+The avg() method should return the average value of the array.
+
+Just as before, check the corresponding test to see if there's anything else that needs to be added.
+
+And you have reached the end!
+
+Happy Coding! ❤️
+
 */
