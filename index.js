@@ -40,7 +40,17 @@ class SortedList {
 
       /*Si no está ordenado: 
 
+      let maxNumber = this.items[0];
 
+      for (let i=1; i < this.items.length; i++){
+      
+        if (this.items[i] > maxNumber){
+        
+          maxNumber = this.items[i];
+        }
+      }
+
+        return maxNumber; 
 
       */
 
@@ -57,6 +67,17 @@ class SortedList {
      return this.items[0]; //Si está ordenado el más bajo es el primero. 
 
      /*Si no lo está: 
+     let minNumber = this.items[0];
+
+      for (let i=1; i < this.items.length; i++){
+      
+        if (this.items[i] < minNumber){
+        
+          minNumber = this.items[i];
+        }
+      }
+
+        return minNumber; 
      
      */
 
@@ -103,14 +124,3 @@ module.exports = SortedList;
 
 
 
-/*
-
-The avg() method should return the average value of the array.
-
-Just as before, check the corresponding test to see if there's anything else that needs to be added.
-
-And you have reached the end!
-
-Happy Coding! ❤️
-
-*/
